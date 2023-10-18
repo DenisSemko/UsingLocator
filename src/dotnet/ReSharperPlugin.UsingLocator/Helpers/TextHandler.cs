@@ -27,7 +27,7 @@ public static class TextHandler
     public static void SortAndRemoveDuplicates(string path)
     {
         string[] lines = File.ReadAllLines(path);
-        string[] uniqueSortedLines = lines.Distinct().OrderBy(x => x).ToArray();
+        string[] uniqueSortedLines = lines.Distinct().Where(line => !string.IsNullOrWhiteSpace(line)).OrderBy(x => x).ToArray();
 
         File.WriteAllLines(path, uniqueSortedLines);
     }
