@@ -4,13 +4,24 @@ public static class TextHandler
 {
     public static string AddGlobalPrefix(ITextControlSelection selection)
     {
+        List<string> globalStatements = new List<string>();
         IList<string> selectedText = selection.GetSelectedText();
         string[] dividedText = selectedText[0].Split('\n');
-        for (int i = 0; i < dividedText.Length; i++)
+        
+        foreach (var line in dividedText)
         {
-            dividedText[i] = "global " + dividedText[i];
+            string[] statements = line.Split(';');
+            
+            foreach (var statement in statements)
+            {
+                if (!string.IsNullOrWhiteSpace(statement))
+                {
+                    globalStatements.Add("global " + statement.Trim() + ";");
+                }
+            }
         }
-        return string.Join(Environment.NewLine, dividedText);
+        
+        return string.Join(Environment.NewLine, globalStatements);
     }
 
     public static void SortAndRemoveDuplicates(string path)

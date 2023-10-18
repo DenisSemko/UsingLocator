@@ -3,6 +3,7 @@ global using JetBrains.DocumentModel;
 global using JetBrains.ProjectModel;
 global using JetBrains.ReSharper.Feature.Services.CSharp.ContextActions;
 global using JetBrains.ReSharper.Feature.Services.ContextActions;
+global using JetBrains.ReSharper.Feature.Services.Util;
 global using JetBrains.ReSharper.Psi.CSharp.Tree;
 global using JetBrains.ReSharper.Psi.Tree;
 global using JetBrains.ReSharper.Resources.Shell;

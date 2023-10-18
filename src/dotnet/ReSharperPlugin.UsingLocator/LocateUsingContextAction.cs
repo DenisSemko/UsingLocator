@@ -16,7 +16,8 @@ public class LocateUsingContextAction : ContextActionBase
     
     public override string Text => Constants.ContextActionText;
     
-    public override bool IsAvailable(IUserDataHolder cache) => _provider.SelectedElement is not null;
+    public override bool IsAvailable(IUserDataHolder cache) => 
+        !_provider.SourceFile.Name.Equals(Constants.FileName, StringComparison.OrdinalIgnoreCase) && _provider.SelectedElement.GetText().Contains("using");
 
     protected override Action<ITextControl> ExecutePsiTransaction(ISolution solution, IProgressIndicator progress)
     {
@@ -36,8 +37,7 @@ public class LocateUsingContextAction : ContextActionBase
 
                 IProject project = _provider.PsiFile.GetProject();
                 string path = Path.Combine(project.Location.FullPath, Constants.FileName);
-                FileHandler.CreateOrUpdateFile(newText, path);
-                
+                FileHandler.CreateOrUpdateFile(project, newText, path);
                 TextHandler.SortAndRemoveDuplicates(path);
                 
                 document.DeleteText(selection.OneDocRangeWithCaret());
