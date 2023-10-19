@@ -1,4 +1,4 @@
-<img src="https://github.com/DenisSemko/UsingLocator/assets/53062219/e64fa90d-c5d9-4928-be43-b7aa34872e05" alt="logo" title="logo" align="right" height="100" />
+<img src="https://github.com/DenisSemko/UsingLocator/assets/53062219/9a654799-d104-4c0a-a4fe-a1a326eedf19" alt="logo" title="logo" align="right" height="100" />
 
 # Using Locator for Rider
 > Powerful Rider plugin designed to streamline the management of C# using directives within your codebase.
@@ -30,7 +30,7 @@ UsingLocator is a Rider plugin that simplifies the process of moving using direc
 
 ## Screenshots
 
-<img width="1393" alt="Screenshot 2023-10-17 at 14 05 05" src="https://github.com/DenisSemko/UsingLocator/assets/53062219/46652687-5141-405c-8c6d-a803e08bfebc">
+<img width="1438" alt="Screenshot 2023-10-18 at 17 54 37" src="https://github.com/DenisSemko/UsingLocator/assets/53062219/628ed21d-ba71-441b-a2e3-f66cf37a68c2">
 
 ## Setup
 > Before using the plugin, make sure it's compatible with your Rider version! Visit Marketplace to check: [UsingLocator](https://plugins.jetbrains.com/plugin/22951-guidgenerator)
@@ -55,12 +55,12 @@ There are two ways how to install the plugin:
   - Choose the context action "UsingLocator: Define Using Directive as Global"
   - Be happy
 
-https://github.com/DenisSemko/UsingLocator/assets/53062219/499e0d9b-e0df-4f86-9929-ac4311accfd7
+https://github.com/DenisSemko/UsingLocator/assets/53062219/9f8429f8-6dda-49fc-96b4-976365eea4db
 
 ## Project Status
 _v1.0 has been released_
 
-[![Rider](https://img.shields.io/jetbrains/plugin/v/RIDER_PLUGIN_ID.svg?label=Rider&colorB=0A7BBB&style=for-the-badge&logo=rider)](https://plugins.jetbrains.com/plugin/me.dench327.plugins.usinglocator)
+[![Rider](https://img.shields.io/jetbrains/plugin/v/RIDER_PLUGIN_ID.svg?label=Rider&colorB=0A7BBB&style=for-the-badge&logo=rider)](https://plugins.jetbrains.com/plugin/22963-usinglocator)
 
 ## Contact
 Created by [@dench327](https://www.linkedin.com/in/denis-semko-551b91191) - feel free to contact me!
