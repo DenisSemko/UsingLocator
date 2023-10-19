@@ -21,7 +21,7 @@ UsingLocator is a Rider plugin that simplifies the process of moving using direc
 
 ## Technologies Used
 - C# 7.0
-- Rider IDE (compatible with Rider version 2023.1 — 2023.1.4)
+- Rider IDE (compatible with Rider version 2023.2.2)
 
 ## Features
 - Moves all selected using directives to the global file;
