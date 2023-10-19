@@ -1,14 +1,14 @@
 <idea-plugin require-restart="true">
   <id>me.dench327.plugins.usinglocator</id>
   <name>UsingLocator</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <vendor url="https://github.com/DenisSemko/UsingLocator">Denys Semko</vendor>
   <idea-version since-build="223.0" until-build="233.0" />
   <depends>com.intellij.modules.rider</depends>
 
   <description>
 <![CDATA[
-  <p>UsingLocator is a powerful Rider plugin designed to streamline the management of C# using directives within your codebase.</p>
+  <p>UsingLocator is a powerful Rider plugin designed to streamline the management of C# using directives within your codebase.</p><br/>
   <p>
     <strong>Features</strong>
     <ul>
