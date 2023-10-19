@@ -2,14 +2,14 @@ namespace ReSharperPlugin.UsingLocator;
 
 [ContextAction(
     Group = CSharpContextActions.GroupID,
-    Name = nameof(LocateUsingContextAction),
-    Description = nameof(LocateUsingContextAction),
+    Name = nameof(ProceedUsingsInFileContextAction),
+    Description = nameof(ProceedUsingsInFileContextAction),
     Priority = -10)]
-public class LocateUsingContextAction : ContextActionBase
+public class ProceedUsingsInFileContextAction : ContextActionBase
 {
     private readonly ICSharpContextActionDataProvider _provider;
 
-    public LocateUsingContextAction(ICSharpContextActionDataProvider provider)
+    public ProceedUsingsInFileContextAction(ICSharpContextActionDataProvider provider)
     {
         _provider = provider;
     }
